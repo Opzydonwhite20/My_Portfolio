@@ -19,7 +19,7 @@ const portfolioData = {
     shortDescription: "a passionate Data Scientist and AI Researcher",
     tagline: "Transforming Data into Actionable Insights",
     welcomeMessage: "Welcome to My Portfolio",
-    profileImage: null, // Set to "/images/profile.jpg" if you have an image
+    profileImage: "images/image1.jpg",
     website: "http://localhost:3000"
   },
   
@@ -34,7 +34,7 @@ const portfolioData = {
   
   education : [
     {
-      degree: "Higher National Diploma in Statistics",
+      degree: "Higher National in Statistics",
       institution: "Federal College of Animal Health and Production Technology, Ibadan",
       duration: "February 2019 – July 2024",
       description: null
