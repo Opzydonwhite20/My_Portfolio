@@ -27,7 +27,7 @@
             <div class="logo"><%= data.personalInfo.fullName %></div>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
             <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a onclick="showSection('home')">Home</a></li>
+                <li class="nav-item"><a href="#" onclick="showSection('home')" role="button">Home</a></li>
                 <li class="nav-item"><a onclick="showSection('about')">About</a></li>
                 <li class="nav-item"><a onclick="showSection('education')">Education & Certifications</a></li>
                 <li class="nav-item"><a onclick="showSection('experience')">Experience</a></li>
@@ -47,7 +47,7 @@
             <div class="hero">
                 <div class="profile-img">
                     <% if (data.personalInfo.profileImage) { %>
-                        <img src="<%= data.personalInfo.profileImage %>" alt="<%= data.personalInfo.fullName %>">
+                        <img src="images/image1.jpg" alt="Profile Image" class="profile-image">
                     <% } else { %>
                         👨‍💻
                     <% } %>
@@ -259,33 +259,5 @@
     </div>
 
     <script src="/js/main.js"></script>
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.classList.remove('active'));
-            
-            // Show selected section
-            document.getElementById(sectionId).classList.add('active');
-            
-            // Close mobile menu if open
-            document.getElementById('navMenu').classList.remove('active');
-        }
-
-        function toggleMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const toggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (!navMenu.contains(event.target) && !toggle.contains(event.target)) {
-                navMenu.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>
