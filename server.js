@@ -139,6 +139,13 @@ const portfolioData = {
       date: "November 2024",
       doi: "https://doi.org/10.4236/jcc.2024.1211007",
       abstract: null
+    },
+    {
+      title: "Enhancing the Level of Sustainable Campus: The Projects and Case Study of Universiti Malaya, Kuala Lumpur",
+      journal: "Journal of Design and Built Environment",
+      date: "June 2025",
+      doi: "https://ajba.um.edu.my/index.php/jdbe/article/view/55562/18260",
+      abstract: null
     }
   ],
   
